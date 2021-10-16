@@ -66,7 +66,7 @@ app.use('/account2',account2);
 // VD : 88 là của SSH hoặc 443 là của TCP
 
 // Lăng nghe port 5000
-app.listen(3000);
-// app.listen(process.env.PORT||3000 , function(){
-//     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-// });
+//app.listen(3000);
+app.listen(process.env.PORT||3000 , function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
